@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip calculator app</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Splitter logo">
+            </div>
+            <form class="form">
+                <div class="data">
+                    <div class="bill">
+                        <div class="bill-heading bill-people-heading">
+                            <h3>bill</h3>
+                        </div>
+                        <input type="number" class="bill-people bill-input" name="bill" id="bill" placeholder="0">
+                    </div>
+                    <div class="tip">
+                        <h3>select tip %</h3>
+                        <div class="grid">
+                            <div class="tip-1 flex ">
+                                <input type="radio" name="tip-percentage" id="tip-1" value="5">
+                                <label for="tip-1" class="label">5%</label>
+                            </div>
+                            <div class="tip-2 flex ">
+                                <input type="radio" name="tip-percentage" id="tip-2" value="10">
+                                <label for="tip-2" class="label">10%</label>
+                            </div>
+                            <div class="tip-3 flex ">
+                                <input type="radio" name="tip-percentage" id="tip-3" value="15">
+                                <label for="tip-3" class="label">15%</label>
+                            </div>
+                            <div class="tip-4 flex ">
+                                <input type="radio" name="tip-percentage" id="tip-4" value="25">
+                                <label for="tip-4" class="label">25%</label>
+                            </div>
+                            <div class="tip-5 flex ">
+                                <input type="radio" name="tip-percentage" id="tip-5" value="50">
+                                <label for="tip-5" class="label">50%</label>
+                            </div>
+                            <div class="tip-6">
+                                <input type="number" name="tip-percentage" id="tip-6" placeholder="custom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people">
+                        <div class="people-heading bill-people-heading">
+                            <h3>number of people</h3>
+                        </div>
+                        <input type="number" class="bill-people people-input" name="people" placeholder="0" id="people">
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="calculate">
+                        <div class="tip-amount-per-person result-flex">
+                            <div class="tip-result-heading">
+                                <h4>Tip Amount </h4>
+                                <h5>/ person</h5>
+                            </div>
+                            <p class="per-person-tip-amount">$0.00</p>
+                        </div>
+                        <div class="total-per-person result-flex">
+                            <div class="person-result-heading">
+                                <h4>Total</h4>
+                                <h5> / person</h5>
+                            </div>
+                            <p class="total-person-amount">$0.00</p>
+                        </div>
+                    </div>
+                    <button type="reset">reset</button>
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
